@@ -46,18 +46,20 @@ class HomeFragment : Fragment() {
     }
 
     private fun loadProducts() {
-        productList.add(Product("Nike Zoom Vomero 5", "6000 บาท", R.drawable.zoom5))
-        productList.add(Product("Nike Killshot 2 Leather", "3600 บาท", R.drawable.killshot2))
-        productList.add(Product("Nike Calm", "1800 บาท", R.drawable.airmax))
-        productList.add(Product("Nike Air Max 1 '86 OG G", "6000 บาท", R.drawable.nikecalm))
+        productList.add(Product("Nike Zoom Vomero 5", "6000 บาท", R.drawable.zoom5,"รองเท้า"))
+        productList.add(Product("Nike Killshot 2 Leather", "3600 บาท", R.drawable.killshot2,"รองเท้า"))
+        productList.add(Product("Nike Calm", "1800 บาท", R.drawable.airmax,"รองเท้า"))
+        productList.add(Product("Nike Air Max 1 '86 OG G", "6000 บาท", R.drawable.nikecalm,"รองเท้า"))
+        productList.add(Product("USAB Limited Home", "3100 บาท", R.drawable.usa,"เสื้อผ้า"))
+        productList.add(Product("Jordan Brooklyn Fleece", "2500 บาท", R.drawable.jacket,"เสื้อผ้า"))
         productAdapter.notifyDataSetChanged()
     }
 
     private fun loadPromotions() {
-        promoList.add(Product("Nike Zoom Vomero 5", "ลดเหลือ 5000 บาท", R.drawable.zoom5))
-        promoList.add(Product("Nike Killshot 2 Leather", "ลดเหลือ 2900 บาท", R.drawable.killshot2))
-        promoList.add(Product("Nike Calm", "ลดเหลือ 1500 บาท", R.drawable.airmax))
-        promoList.add(Product("Nike Air Max 1 '86 OG G", "ลดเหลือ 5400 บาท", R.drawable.nikecalm))
+        promoList.add(Product("Nike Zoom Vomero 5", "ลดเหลือ 5000 บาท", R.drawable.zoom5,"รองเท้า"))
+        promoList.add(Product("Nike Killshot 2 Leather", "ลดเหลือ 2900 บาท", R.drawable.killshot2,"รองเท้า"))
+        promoList.add(Product("Nike Calm", "ลดเหลือ 1500 บาท", R.drawable.airmax,"รองเท้า"))
+        promoList.add(Product("Nike Air Max 1 '86 OG G", "ลดเหลือ 5400 บาท", R.drawable.nikecalm,"รองเท้า"))
         promoAdapter.notifyDataSetChanged()
     }
 
